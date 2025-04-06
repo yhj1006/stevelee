@@ -1,0 +1,104 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background: #e3f2fd;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+.upload-area {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+#game-area {
+  position: relative;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 2px solid #333;
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+}
+
+#player {
+  position: absolute;
+  bottom: 10px;
+  left: 135px;
+  width: 30px;
+  height: 30px;
+  background-color: #4caf50;
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center;
+}
+
+#poop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+  background-position: center;
+  font-size: 0; /* 텍스트 안보이게 */
+}
+
+#status {
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+#left-touch,
+#right-touch {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  z-index: 10;
+}
+
+#left-touch {
+  left: 0;
+}
+
+#right-touch {
+  right: 0;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0b7dda;
+}
+
+@media (max-width: 480px) {
+  #game-area {
+    width: 280px;
+    height: 380px;
+  }
+  
+  .upload-area {
+    width: 280px;
+    margin: 0 auto 10px;
+  }
+  
+  .upload-area label {
+    text-align: left;
+    font-size: 14px;
+  }
+}

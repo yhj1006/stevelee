@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>똥피하기 게임</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>💩 똥피하기 게임</h1>
+
+  <div class="upload-area">
+    <label>👤 캐릭터 이미지:
+      <input type="file" id="image-upload" accept="image/*" />
+    </label>
+    <label>💩 똥 이미지:
+      <input type="file" id="poop-upload" accept="image/*" />
+    </label>
+  </div>
+
+  <div id="game-area">
+    <div id="player"></div>
+    <div id="poop"></div>
+    <div id="left-touch"></div>
+    <div id="right-touch"></div>
+  </div>
+
+  <p id="status"></p>
+  <button onclick="location.reload()">다시하기</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
